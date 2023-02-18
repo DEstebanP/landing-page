@@ -10,8 +10,8 @@
     --secondary-very-light-red: hsl(13, 100%, 72%);
     --gray-blue: hsl(237, 17%, 21%);
     --desaturated-blue: hsl(237, 23%, 32%);
-    --font-text: 'Overpass', sans-serif;
-    --font-titles: 'Ubuntu', sans-serif;
+    --font-text: 'Overpass', sans-serif; /* 300, 600 */
+    --font-titles: 'Ubuntu', sans-serif; /* 400, 500, 700 */
 }
 * {
     margin: 0;
@@ -23,13 +23,19 @@ html {
 body {
     font-size: 1.6rem;
 }
+header {
+    background-image: linear-gradient(var(--secondary-very-light-red),var(--secondary-light-red));
+    border-radius: 0 0 0 8.2rem;
+}
 .header-container {
     width: 100vw;
-    height: 50rem;
-    background-color: var(--primary-very-light-red);
+    height: 58rem;
+    background-image: url("./images/bg-pattern-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 36% 33%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-radius: 0 0 0 8.2rem;
 }
 .top-header-container {
@@ -43,14 +49,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 4rem;
+    margin: 0 4rem 9rem;
 }
 .header-section h1 {
     text-align: center;
     font-family: var(--font-titles);
     color: var(--font-white);
     font-weight: 400;
-    margin: 2.4rem 0 1.6rem;
+    margin: 0 0 1.6rem;
 }
 .header-section p {
     text-align: center;
@@ -64,11 +70,21 @@ body {
     gap: 1.6rem;
 }
 .header-buttons button {
-    font-family: var(--font-text);
-    font-weight: 300;
-    padding: 1.2rem;
+    font-family: var(--font-titles);
+    font-weight: 500;
+    padding: 1.2rem 1.6rem;
     border: none;
     border-radius: 2.4rem;
+}
+.header-buttons button:first-child {
+    background-color: white;
+    color: var(--primary-light-red);
+}
+.header-buttons button:nth-child(2) {
+    background-color: transparent;
+    border: 0.1rem solid var(--font-white);
+    color: var(--font-white);
+    ;
 }
 
 
