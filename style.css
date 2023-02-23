@@ -16,6 +16,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     font-size: 62.5%;
@@ -24,8 +25,12 @@ body {
     font-size: 1.6rem;
     width: 100%;
 }
-h1, h2, p {
+h1, h2, h3, p {
     text-align: center;
+}
+img {
+    min-width: 31.8rem;
+    max-width: 100%;
 }
 header {
     background-image: linear-gradient(var(--secondary-very-light-red),var(--secondary-light-red));
@@ -131,7 +136,7 @@ nav {
     justify-content: center;
 }
 .main-container .main-top-section img {
-    width: 100%;
+    width: 37rem;
 }
 
 .main-mobile-section {
@@ -158,8 +163,7 @@ nav {
 .main-mobile-section div img {
     position: absolute;
     top: -17rem;
-    width: 95%;
-
+    width: 35rem;
 }
 .main-mobile-section div h2 {
     font-family: var(--font-text);
@@ -175,3 +179,71 @@ nav {
     margin-bottom: 10rem;
 }
 
+.main-laptop-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 4.8rem;
+    gap: 1rem;
+}
+.main-laptop-section img {
+    width: 36rem;
+}
+.main-laptop-section article {
+    padding: 0 10% 0;
+}
+.main-laptop-section article * {
+    margin-top: 2rem;
+}
+.main-laptop-section h2 {
+    font-family: var(--font-titles);
+    font-weight: 500;
+    color: var(--primary-very-dark-blue);
+}
+.main-laptop-section p {
+    color: var(--body-dark-grayish-blue);
+    font-family: var(--font-text);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+footer {
+    height: 76rem;
+    width: 100%;
+    background-color: var(--footer-background);
+    color: var(--font-white);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    border-radius: 0 8.6rem 0 0;
+    margin-top: 8rem;
+}   
+footer img {
+    min-width: 0;
+    width: 10rem;
+    margin-top: 7rem;
+    margin-bottom: 2.8rem;
+}
+footer div h3 {
+    font-family: var(--font-titles);
+    font-weight: 400;
+    margin-bottom: 2.8rem;
+}
+footer div ul {
+    list-style: none;
+    text-align: center;
+}
+footer div ul li {
+    margin-bottom: 0.6rem;
+}
+footer div ul a {
+    color: var(--font-footer-blue);
+    font-family: var(--font-text);
+    font-weight: 300;
+    text-decoration: none;
+}
+footer div ul a:hover {
+    text-decoration: underline;
+}
