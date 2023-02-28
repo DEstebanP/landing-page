@@ -29,59 +29,59 @@ h1, h2, h3, p {
     text-align: center;
 }
 img {
-    min-width: 31.8rem;
+    min-width: 318px;
     max-width: 100%;
 }
 header {
     background-image: linear-gradient(var(--secondary-very-light-red),var(--secondary-light-red));
-    border-radius: 0 0 0 8.2rem;
+    border-radius: 0 0 0 82px;
 }
 .header-container {
     width: 100%;
-    height: 56rem;
+    height: 560px;
     background-image: url("./images/bg-pattern-intro-mobile.svg");
     background-repeat: no-repeat;
     background-position: 36% 33%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-radius: 0 0 0 8.2rem;
+    border-radius: 0 0 0 82px;
 }
 .top-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2rem;
+    margin: 0 20px;
 }
 
 .header-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 4rem 8rem;
+    margin: 0 40px 80px;
 }
 .header-section h1 {
     font-family: var(--font-titles);
     color: var(--font-white);
     font-weight: 400;
-    margin: 0 0 1.6rem;
+    margin: 0 0 16px;
 }
 .header-section p {
     color: var(--font-white);
     font-family: var(--font-text);
     font-weight: 300;
-    margin-bottom: 4.6rem;
+    margin-bottom: 46px;
 }
 .header-buttons{
     display: flex;
-    gap: 1.6rem;
+    gap: 16px;
 }
 .header-buttons button {
     font-family: var(--font-titles);
     font-weight: 500;
-    padding: 1.2rem 1.6rem;
+    padding: 12px 16px;
     border: none;
-    border-radius: 2.4rem;
+    border-radius: 24px;
 }
 .header-buttons button:first-child {
     background-color: white;
@@ -89,7 +89,7 @@ header {
 }
 .header-buttons button:nth-child(2) {
     background-color: transparent;
-    border: 0.1rem solid var(--font-white);
+    border: 1px solid var(--font-white);
     color: var(--font-white);
     ;
 }
@@ -107,15 +107,15 @@ nav {
 
 .main-container .main-top-section {
     width: 80%;
-    margin-top: 10rem;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 3.6rem;
+    gap: 36px;
 }
-.main-container .main-top-section article {
+.main-container .main-top-section div {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 24px;
 }
 .main-container .main-top-section h2{
     font-family: var(--font-titles);
@@ -136,12 +136,12 @@ nav {
     justify-content: center;
 }
 .main-container .main-top-section img {
-    width: 37rem;
+    width: 370px;
 }
 
 .main-mobile-section {
     width: 100%;
-    margin-top: 25rem;
+    margin-top: 250px;
 }
 .main-mobile-section div {
     background-color: var(--gray-blue);
@@ -149,34 +149,34 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 1.6rem;
+    gap: 16px;
     align-items: center;
     position: relative;
-    height: 56rem;
-    border-radius: 0 8.4rem 0;
+    height: 560px;
+    border-radius: 0 84px 0;
     padding: 0 10% 0;
     background-image: url("./images/bg-pattern-circles.svg");
     background-repeat: no-repeat;
-    background-size: 60rem;
+    background-size: 600px;
     background-position: 50% 610%;
 }   
 .main-mobile-section div img {
     position: absolute;
-    top: -17rem;
-    width: 35rem;
+    top: -170px;
+    width: 350px;
 }
 .main-mobile-section div h2 {
     font-family: var(--font-text);
     font-weight: 600;
     font-size: 3.6rem;
     line-height: 1.3;
-    margin-top: 5rem;
+    margin-top: 50px;
 }
 .main-mobile-section div p {
     font-family: var(--font-text);
     font-weight: 300;
     line-height: 1.5;
-    margin-bottom: 10rem;
+    margin-bottom: 100px;
 }
 
 .main-laptop-section {
@@ -184,17 +184,17 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 4.8rem;
-    gap: 1rem;
+    margin-top: 48px;
+    gap: 10px;
 }
 .main-laptop-section img {
-    width: 36rem;
+    width: 360px;
 }
-.main-laptop-section article {
+.main-laptop-section div {
     padding: 0 10% 0;
 }
-.main-laptop-section article * {
-    margin-top: 2rem;
+.main-laptop-section div * {
+    margin-top: 20px;
 }
 .main-laptop-section h2 {
     font-family: var(--font-titles);
@@ -209,34 +209,34 @@ nav {
 }
 
 footer {
-    height: 76rem;
+    height: 760px;
     width: 100%;
     background-color: var(--footer-background);
     color: var(--font-white);
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 40px;
     align-items: center;
-    border-radius: 0 8.6rem 0 0;
-    margin-top: 8rem;
+    border-radius: 0 86px 0 0;
+    margin-top: 80px;
 }   
 footer img {
     min-width: 0;
-    width: 10rem;
-    margin-top: 7rem;
-    margin-bottom: 2.8rem;
+    width: 100px;
+    margin-top: 70px;
+    margin-bottom: 28px;
 }
 footer div h3 {
     font-family: var(--font-titles);
     font-weight: 400;
-    margin-bottom: 2.8rem;
+    margin-bottom: 28px;
 }
 footer div ul {
     list-style: none;
     text-align: center;
 }
 footer div ul li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 6px;
 }
 footer div ul a {
     color: var(--font-footer-blue);
