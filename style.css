@@ -245,6 +245,7 @@ nav .nav-button button:nth-child(2) {
 }
 
 .main-mobile {
+    width: 100%;
     margin-top: 250px;
     border-radius: 0 84px 0;
 }
