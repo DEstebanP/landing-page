@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="./desktop.css"
+    media="screen and (min-width: 1000px)"
+    />
 </head>
 <body>
     <header>
@@ -53,38 +58,42 @@
     </header>
     <main class="main-container">
         <section class="main-top-section">
-            <div class="editor-img-container">
-                <h2>Designed for the future</h2>
-                <figure>
-                    <img src="./images/illustration-editor-mobile.svg" alt="An editor illustration">
-                </figure>
-            </div>
-            <div class="main-top-section--content">
-                <h2>Introducing an extensible editor</h2>
-                <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. <br> Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
-                </p>
-            </div>
-            <div class="main-top-section--content">
-                <h2>Robust content management</h2>
-                <p>Flexible content management enables users to easily move through posts. <br> Increase the usability of your blog by adding customized categories, sections, format or flow. With this functionality, you're in full control.</p>
+            <h2>Designed for the future</h2>
+            <div class="top-section-container">
+                <div class="editor-img-container"></div>
+                <div class="main-top-section--content">
+                    <div>
+                        <h2>Introducing an extensible editor</h2>
+                        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. <br> Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Robust content management</h2>
+                        <p>Flexible content management enables users to easily move through posts. <br> Increase the usability of your blog by adding customized categories, sections, format or flow. With this functionality, you're in full control.</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="main-mobile-section">
-                <div>
-                    <img src="./images/illustration-phones.svg" alt="Two phones">
-                    <h2>State of the Art Infrastructure</h2>
-                    <p>With reliability and speed in mind, worldwide data center provide the backbone for ultra-fast connectity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
-                </div>
+        <section class="main-mobile">
+            <div class="main-mobile-section">
+                <img src="./images/illustration-phones.svg" alt="Image two phones">
+            <div>
+                <h2>State of the Art Infrastructure</h2>
+                <p>With reliability and speed in mind, worldwide data center provide the backbone for ultra-fast connectity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+            </div>
+            </div>
         </section>
         <section class="main-laptop-section">
-            <img src="./images/illustration-laptop-mobile.svg" alt="Laptop illustration">
-            <div>
-                <h2>Free, open, simple</h2>
-                <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-            </div>
-            <div>
-                <h2>Powerful tooling</h2>
-                <p>Batteries included. We built a simple and straigthforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+            <div class="laptop-img"></div>
+            <div class="laptop-section--content">
+                <div>
+                    <h2>Free, open, simple</h2>
+                    <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+                </div>
+                <div>
+                    <h2>Powerful tooling</h2>
+                    <p>Batteries included. We built a simple and straigthforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+                </div>
             </div>
         </section>
     </main>

@@ -87,16 +87,24 @@ header {
     border: none;
     border-radius: 24px;
     cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(89, 73 , 30, 0.16);
 }
 .header-buttons button:first-child {
     background-color: white;
     color: var(--primary-light-red);
 }
+.header-buttons button:first-child:hover {
+    background-color: var(--primary-very-light-red);
+    color: var(--font-white);
+}
 .header-buttons button:nth-child(2) {
     background-color: transparent;
     border: 1px solid var(--font-white);
     color: var(--font-white);
-    ;
+}
+.header-buttons button:nth-child(2):hover {
+    background-color: var(--font-white);
+    color: var(--primary-light-red);
 }
 
 nav {
@@ -128,6 +136,7 @@ nav ul {
 }
 nav > ul li {
     margin-bottom: 26px;
+    cursor: pointer;
 }
 nav .nav-dropdown-options {
     width: 90%;
@@ -151,6 +160,7 @@ nav > ul span{
 }
 nav div li {
     margin-bottom: 18px;
+    cursor: pointer;
 }
 nav li:nth-child(3) {
     margin-bottom: 0;
@@ -193,22 +203,27 @@ nav .nav-button button:nth-child(2) {
 }
 
 .main-container .main-top-section {
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.top-section-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 36px;
     width: 100%;
-    margin-top: 100px;
 }
 .main-top-section .main-top-section--content {
     width: 80%;
+    max-width: 850px;
+    margin-top: 12px;
 }
-.main-container .main-top-section div {
+.top-section-container .main-top-section--content {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 .main-container .main-top-section h2{
+    margin-bottom: 24px;
     font-family: var(--font-titles);
     font-weight: 500;
     color: var(--primary-very-dark-blue);
@@ -219,38 +234,46 @@ nav .nav-button button:nth-child(2) {
     font-weight: 300;
     line-height: 1.5;
 }
-.main-container .main-top-section figure {
+.main-top-section .editor-img-container {
+    width: 100%;
+    min-width: 300px;
+    max-width: 480px;
+    height: 340px;
+    background-image: url('./images/illustration-editor-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.main-mobile {
+    margin-top: 250px;
+    border-radius: 0 84px 0;
+}
+.main-mobile-section {
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
-}
-.main-container .main-top-section img {
-    width: 100%;
-    min-width: 300px;
-}
-
-.main-mobile-section {
-    width: 100%;
-    margin-top: 250px;
-}
-.main-mobile-section div {
-    background-color: var(--gray-blue);
-    color: var(--font-white);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 16px;
-    align-items: center;
-    position: relative;
     height: 560px;
-    border-radius: 0 84px 0;
-    padding: 0 10% 0;
     background-image: url("./images/bg-pattern-circles.svg");
     background-repeat: no-repeat;
     background-size: 600px;
     background-position: 50% 610%;
+    background-color: var(--gray-blue);
+    border-radius: 0 84px 0;
+}
+.main-mobile-section div {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 850px;
+    padding: 0 10% 0;
+    color: var(--font-white);
 }   
-.main-mobile-section div img {
+.main-mobile-section img {
     position: absolute;
     top: -170px;
     width: 350px;
@@ -274,24 +297,31 @@ nav .nav-button button:nth-child(2) {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 48px;
+    max-width: 850px;
+    margin: 48px auto 0;
     gap: 10px;
 }
-.main-laptop-section img {
-    width: 360px;
+.main-laptop-section .laptop-img{
+    width: 70%;
+    min-width: 295px;
+    max-width: 470px;
+    height: 310px;
+    background-image: url("./images/illustration-laptop-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.main-laptop-section div {
+.laptop-section--content {
     padding: 0 10% 0;
 }
-.main-laptop-section div * {
+.laptop-section--content h2 {
     margin-top: 20px;
-}
-.main-laptop-section h2 {
     font-family: var(--font-titles);
     font-weight: 500;
     color: var(--primary-very-dark-blue);
 }
-.main-laptop-section p {
+.laptop-section--content p {
+    margin-top: 20px;
     color: var(--body-dark-grayish-blue);
     font-family: var(--font-text);
     font-weight: 300;
@@ -341,8 +371,3 @@ footer div ul a:hover {
 .inactive {
     display: none;
 }
-
-/*
-Evento click para el nav en movil y para el contenedor dentro del nav
-Poner de active states
-Desktop Design */
