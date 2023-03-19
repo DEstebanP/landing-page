@@ -1,4 +1,5 @@
 const burguerMenu = document.querySelector('.icon-burguer');
+const imgIcon = document.querySelector('.icon-burger-img')
 const dropDownMenu = document.querySelector('.connect-menu');
 const nav = document.querySelector('.main-navbar');
 const insideNavMenu = document.querySelector('.nav-dropdown-options');
@@ -11,9 +12,11 @@ function toggleMenuMobile() {
     const isInnerMenuClosed = insideNavMenu.classList.contains('inactive');
     if (isNavbarClosed) {
         nav.classList.remove('inactive');
+        imgIcon.src = './images/icon-close.svg'
     }
     else {
         nav.classList.add('inactive');
+        imgIcon.src = './images/icon-hamburger.svg'
     }
 
     if (!isInnerMenuClosed) {

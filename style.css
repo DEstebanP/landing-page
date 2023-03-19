@@ -28,10 +28,6 @@ body {
 h1, h2, h3, p {
     text-align: center;
 }
-img {
-    min-width: 318px;
-    max-width: 100%;
-}
 header {
     position: relative;
     background-image: linear-gradient(var(--secondary-very-light-red),var(--secondary-light-red));
@@ -56,6 +52,9 @@ header {
 }
 .icon-burguer {
     cursor: pointer;
+}
+.icon-burguer img {
+    width: 32px;
 }
 
 .header-section {
